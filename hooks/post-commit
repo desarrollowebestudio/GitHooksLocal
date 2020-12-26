@@ -1,0 +1,3 @@
+#!/bin/sh
+echo ¡Felicitaciones por completar este commit, $GIT_AUTHOR_NAME!
+exit 0

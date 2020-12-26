@@ -1,0 +1,3 @@
+#!/bin/sh
+echo Lo sentimos, el rebasing está deshabilitado en este repositorio.
+exit 1

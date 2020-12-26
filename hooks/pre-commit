@@ -1,0 +1,19 @@
+#!/bin/sh
+# Nombre primera línea: Shebang
+
+# Creación de expresión regular para validar formato de e-mail
+formatoEmail="@sophos\.com$"
+# En expresiones regulares '$' significa el final una línea (el texto sólo hace match termina la línea)
+
+# Otras Variables
+email=$GIT_AUTHOR_EMAIL
+
+# Evaluación de condición
+if [[ $email =~ $formatoEmail ]];
+then
+  echo "¡Muy bien! El email '$email' cumple con el formato."
+  exit 0
+else
+  echo "Lo sentimos, el email '$email' NO cumple con el formato."
+  exit 1
+fi
